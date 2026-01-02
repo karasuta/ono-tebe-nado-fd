@@ -1,1 +1,141 @@
-/* место для вашего кода */
+/* -----------------------------------НАЧАЛО HEADER -------------------------*/
+.header {
+  padding: 92px 50px 96px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  font-size: 18px;
+  font-weight: normal;
+}
+.header__menu {
+}
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+.header__links-list-item {
+  text-underline-offset: 4px;
+}
+.header__links-list-item_no-bullit{
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+.header__link_active{
+  text-decoration: none;
+}
+.header__logo{
+  display: block;
+}
+.header__logo-image{
+  width: 148px;
+  height: 105px;
+}
+.address {
+  
+}
+.header__address{
+  max-width: 240px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 24px;
+}
+/*---------------------------------- КОНЕЦ HEADER -----------------------------*/
+.main {
+}
+/*----------------------------------- СЕКЦИЯ COVER------------------------------ */
+.cover {
+  padding: 165px 50px 0;
+  margin-bottom: 180px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  min-height: 757px;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+
+}
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+.cover__title{
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 106px; 
+}
+.aligned-text{
+  display: block;
+  line-height: 1.15;
+  letter-spacing: 30px;
+  font-size: 100px;
+}
+.no-letter-spacing{
+  letter-spacing: 0;
+}
+.aligned-text_left{
+  text-align: start;
+  word-spacing: 45px;
+}
+.aligned-text_center{
+  text-align: center;
+  line-height: 1.55;
+}
+.aligned-text_right{
+  text-align: end;
+}
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cover__description-text {
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 28px;
+  word-spacing: 20px;
+}
+.bet-button {
+  padding: 12px 32px 11px 31px;
+  font-size: 22px;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+/* -----------------------------------КОНЕЦ СЕКЦИИ COVER ------------------------*/
+.lots {
+  margin: 0 24px 155px;
+}
+.lots__heading {
+  
+}
+.lots__list {
+}
+.lots__list-item {
+}
+.read-more {
+}
+.about {
+  margin: 0 24px 180px;
+}
+.about__logo {
+}
+.about__content {
+}
+.about__text {
+}
+.footer {
+  padding: 0 50px;
+}
+.social__list {
+}
+.social__list-item {
+}

@@ -10,39 +10,51 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
+
+<!------------------------------------- НАЧАЛО ШАПКИ ----------------------------------->
     <header class="header">
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            главная
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item_no-bullit">
+            <a href="#" class="header__link_active">главная</a>
           </li>
-          <li class="menu__list-item">
-            посмотреть лоты
+          <li class="header__links-list-item">
+            <a href="#" class="header__link">посмотреть лоты</a>
           </li>
-          <li class="menu__list-item">
-            об аукционе
+          <li class="header__links-list-item">
+            <a href="#" class="header__link">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a href="" class="logo">
-
+      <a class="header__logo">
+        <img class="header__logo-image" src="./images/logo-black.svg" alt="логотип">
       </a>
-      <addres class="contacts">
-        
+      <addres class="address header__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        наб. Принсенграхт 263- 265, Амстердам
       </addres>
     </header>
+<!-------------------------------------КОНЕЦ ШАПКИ  ------------------------------------>
     <main class="main">
+<!-------------------------------------НАЧАЛО БЛОКА COVER ------------------------------>
       <section class="cover">
-        <h1>
-          ОНО
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text_left">ОНО</span>
+          <span class="aligned-text aligned-text_center">ТЕБЕ</span>
+          <span class="aligned-text aligned-text_right">НАД<span class="no-letter-spacing">О</span></span>
         </h1>
-        <div class="description">
-          <p class="description__about">Аукцион вещей, вкоторые никто не верил</p>
-          <button class="submit">Сделать ставку</button>
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
+<!----------------------------------- КОНЕЦ БЛОКА COVER ------------------------------->
+
+<!------------------------------------ НАЧАЛО БЛОКА LOTS ------------------------------->
       <section class="lots">
-        <h2 class="title"></h2>
+        <h2 class="lots__heading">ЛОТЫ</h2>
         <ul class="lots__list">
           <li class="lots__list-item">
             <a href="">
@@ -68,6 +80,9 @@
           <a href="" class="read-more"></a>
         </ul>
       </section>
+<!------------------------------------КОНЕЦ БЛОКА LOTS ---------------------------------->
+
+<!------------------------------------ НАЧАЛО БЛОКА ABOUT ----------------------------->
       <section class="about">
         <div class="about__logo"></div>
         <div class="about__content">
@@ -77,7 +92,9 @@
 на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
         </div>
       </section>
+<!------------------------------------КОНЕЦ БЛОКА ABOUT ----------------------------->
     </main>
+<!----------------------------------- НАЧАЛО FOOTER ---------------------------------->
     <footer class="footer">
       <addres class="contacts">
         
@@ -107,5 +124,6 @@
         </li>
       </ul>
     </footer>
+<!----------------------------------- КОНЕЦ FOOTER ----------------------------------->
   </body>
 </html>
