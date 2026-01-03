@@ -33,15 +33,20 @@
   height: 105px;
 }
 .address {
-  
+  display: flex;
+  flex-direction: column;
+}
+.address{
+
 }
 .header__address{
   max-width: 240px;
   justify-self: end;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   line-height: 24px;
+}
+.header__address a{
+  text-underline-offset: 4px;
 }
 /*---------------------------------- КОНЕЦ HEADER -----------------------------*/
 .main {
@@ -61,7 +66,7 @@
 .overlay{
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
   z-index: -1;
 }
 .cover__title{
@@ -101,6 +106,9 @@
   line-height: 28px;
   word-spacing: 20px;
 }
+/* button{
+  cursor: pointer;
+} */
 .bet-button {
   padding: 12px 32px 11px 31px;
   font-size: 22px;
@@ -111,31 +119,159 @@
   background-color: transparent;
 }
 /* -----------------------------------КОНЕЦ СЕКЦИИ COVER ------------------------*/
+/* -----------------------------------НАЧАЛО СЕКЦИИ LOTS ------------------------*/
 .lots {
-  margin: 0 24px 155px;
+  margin: 0 24px 120px;
+}
+.heading{
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .lots__heading {
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+.lots__card-list{
+  list-style: none;
+  display: flex;
+  gap:25px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.lots__card-list-item{
+  width: 334px;
+  min-height: 596px;
+}
+.card-link{
+  display: block;
+  height: 100%;
   
 }
-.lots__list {
+.card-link{
+  text-decoration: none;
 }
-.lots__list-item {
+
+.card{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 48px 40px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  z-index: -2;
 }
-.read-more {
+.card_type_film{
+  background-image: url(../images/card-lot-01.jpg);
 }
+.card_type_book{
+  background-image: url(../images/card-lot-02.jpg);
+}
+.card_type_picture{
+  background-image: url(../images/card-lot-03.jpg);
+}
+.card__title{
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.card__text{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.lots__look-more-link{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-left: 40px;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+/* -----------------------------------КОНЕЦ СЕКЦИИ LOTS --------------------------*/
+
+/* -----------------------------------НАЧАЛО СЕКЦИИ ABOUT------------------------- */
 .about {
   margin: 0 24px 180px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px;
+  justify-items: center;
 }
 .about__logo {
+  width: 240px;
+  height: 240px;
+  margin-top: 35px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
-.about__content {
+.about__logo-image{
+  width: 142px;
+  height: 113px;
 }
-.about__text {
+.about__title{
+  margin-top: 136px;
+  margin-bottom: 100px;
 }
+.about__text{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+}
+/* ----------------------------------КОНЕЦ СЕКЦИИ ABOUT --------------------------------------*/
+
+/* ------------------------------------FOOTER ------------------------------------------------*/
+
 .footer {
-  padding: 0 50px;
+  font-size: 18px;
+  font-weight: normal;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 50px 82px;
 }
-.social__list {
+.footer__address {
+  text-underline-offset: 4px;
+  line-height: 24px;
 }
-.social__list-item {
+.footer__menu {
+}
+.footer__menu-list {
+  list-style-type: none;
+  padding-left: 0;
+  justify-self: center;
+  text-align: center;
+  line-height: 21px;
+}
+.footer__menu-list-item {
+}
+.footer__menu-link_active {
+  text-decoration: none;
+}
+.footer__menu-link {
+}
+.footer__social-list {
+  list-style-type: none; 
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+}
+.footer__social-list-item {
+}
+.footer__social-link {
+}
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
